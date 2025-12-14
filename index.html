@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Art Inspiration</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="background-header">
+            <h1 class="background-title">Daily Art Inspiration</h1>
+            <div class="background-date" id="dateDisplay"></div>
+            <div class="info-section">
+                <p class="info-text">Each day brings a unique combination of subject and artistic style to inspire your creativity!</p>
+                <p class="info-text">Tag your creations with #dailyartchallenge.</p>
+            </div>
+        </header>
+        
+        <main>
+            <div class="prompt-card">
+                <div class="prompt-content">
+                    <h2 class="prompt-text" id="promptText"></h2>
+                </div>
+                
+                <div class="images-container">
+                    <div class="image-card">
+                        <div class="image-label">Subject</div>
+                        <div class="image-wrapper" id="subjectImageWrapper">
+                            <div class="loading-spinner"></div>
+                        </div>
+                        <div class="image-title" id="subjectTitle"></div>
+                        <div class="bio-text" id="subjectBio"></div>
+                    </div>
+                    
+                    <div class="image-card">
+                        <div class="image-label">Artist Style</div>
+                        <div class="image-wrapper" id="artistImageWrapper">
+                            <div class="loading-spinner"></div>
+                        </div>
+                        <div class="image-title" id="artistTitle"></div>
+                        <div class="bio-text" id="artistBio"></div>
+                    </div>
+                </div>
+                
+                <div class="gallery-section">
+                    <div class="gallery-label">More Works</div>
+                    <div class="gallery-container" id="worksGallery">
+                        <div class="loading-spinner"></div>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+        
+        <!-- Alert Overlay -->
+        <div id="alertOverlay" class="alert-overlay" style="display: none;">
+            <div class="alert-message">Invalid date parameter. Showing today's date.</div>
+        </div>
+        
+        <footer class="footer">
+            <p class="footer-text">
+                © 2025 <a href="https://nicola.codes" target="_blank" rel="noopener noreferrer">nicola.codes</a>
+            </p>
+            <p class="footer-attribution">
+                Images and subjects sourced from <a href="https://www.wikipedia.org" target="_blank" rel="noopener noreferrer">Wikipedia</a>.
+            </p>
+        </footer>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
+
