@@ -15,22 +15,62 @@ body {
 }
 
 .container {
-    max-width: 900px;
+    max-width: 1800px;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
     position: relative;
 }
 
 .background-header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
     padding: 30px 40px;
     pointer-events: none;
-    z-index: 1;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    width: 100%;
+}
+
+/* Large screens: fixed header on the left */
+@media (min-width: 601px) {
+    body {
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding: 20px;
+    }
+    
+    .container {
+        display: flex;
+        flex-direction: column;
+        max-width: 1800px;
+        width: 100%;
+        margin: 0 auto;
+    }
+    
+    .background-header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 33.333%;
+        max-width: 600px;
+        padding: 30px 40px;
+        z-index: 1;
+        height: 100vh;
+        overflow-y: auto;
+    }
+    
+    main {
+        width: 66.667%;
+        max-width: 1200px;
+        margin-left: 33.333%;
+        min-width: 0;
+    }
+    
+    .footer {
+        width: 100%;
+        margin-top: 40px;
+    }
 }
 
 .background-title {
@@ -52,6 +92,11 @@ body {
     margin: 8px 0 0 0;
 }
 
+main {
+    width: 100%;
+    position: relative;
+}
+
 .prompt-card {
     background: white;
     border-radius: 20px;
@@ -59,7 +104,7 @@ body {
     box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
     animation: fadeIn 0.5s ease-in;
     position: relative;
-    z-index: 2;
+    width: 100%;
 }
 
 @keyframes fadeIn {
@@ -395,11 +440,17 @@ body {
 }
 
 @media (max-width: 600px) {
+    body {
+        align-items: flex-start;
+        padding: 20px;
+    }
+    
+    .container {
+        gap: 20px;
+    }
+    
     .background-header {
-        position: relative;
         padding: 20px 20px 10px 20px;
-        margin-bottom: 20px;
-        width: auto;
     }
     
     .background-title {
@@ -415,7 +466,6 @@ body {
     
     .prompt-card {
         padding: 30px 20px;
-        margin-top: 0;
     }
     
     .prompt-text {

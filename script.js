@@ -32,7 +32,7 @@ const artists = [
     "Kerry James Marshall", "Mark Bradford", "Julie Mehretu", "Yinka Shonibare",
     "William Kentridge", "Gerhard Richter", "Sigmar Polke", "Jay DeFeo",
     "Neo Rauch", "Daniel Richter", "Peter Doig", "Marlene Dumas", "Luc Tuymans",
-    "Michaël Borremans", "Chris Ofili", "Glenn Brown", "Sofonisba Anguissola", "Lisa Yuskavage",
+    "Lawren Harris", "Chris Ofili", "Glenn Brown", "Sofonisba Anguissola", "Lisa Yuskavage",
     "Elizabeth Peyton", "Francesco Clemente", "Sandro Chia", "Enzo Cucchi", "Joaquin Sorolla",
     "Emilio Vedova", "Alberto Burri", "Lucio Fontana",
     "Sam Francis", "Joan Mitchell", "Grace Hartigan", "Elaine de Kooning",
